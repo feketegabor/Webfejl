@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fekete Gábor">
+    <meta name="description" content="Egészségügyi ismeretek érettségi vizsgatárgyat bemutató oldal">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="kepek/favicon/android-icon-192x192.png">
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Egészségügyi ismeretek</title>
+</head>
+<body>  
+    <div class="row">
+        <header class="col-12 col-t-12">
+            <img src="kepek/headerWithTitle.png" alt="">
+        </header>
+    </div>
+    <div class="row">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Kezdő</a>
+                <a href="vl.html">Vizsgaleírás</a>
+                <a href="tananyag.html" class="active">Tananyagok</a>
+                <a href="feladatok.html">Feladatok</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div id="iframecontainer" class="col-6 col-t-12">
+            <a id="wordLink" href="Témakörök/Szakmai etikai és jogi ismeretek.docx">Kidolgozott tétel</a>
+        </div>
+        <div class="col-6 col-t-12 lecsusztatni">
+            <div>
+                <button class="accordion">Alapismeretek</button>
+                <div class="panel">
+                <button onclick="changeWordFile(event)">Szakmai etikai és jogi ismeretek</button><br>
+                <button onclick="changeWordFile(event)">Egészségfejlesztés</button><br>
+                <button onclick="changeWordFile(event)">Kommunikáció</button><br>
+                <button onclick="changeWordFile(event)">Szociológia </button><br>
+                <button onclick="changeWordFile(event)">A pszichológia és pedagógia alapjai</button><br>
+                <button onclick="changeWordFile(event)">Egészségügyi ellátórendszer</button><br>
+                <button onclick="changeWordFile(event)">Népegészségügykörnyezet-egészségügy</button>
+                </div>
+            </div>
+            <div>
+                <button class="accordion">Alapápolás</button>
+                <div class="panel">
+                    <button onclick="changeWordFile(event)">Egészséges ember gondozása</button><br>
+                    <button onclick="changeWordFile(event)">Akadályozott ember gondozása</button><br>
+                    <button onclick="changeWordFile(event)">Csecsemő- és kisgyermekgondozás</button><br>
+                    <button onclick="changeWordFile(event)">Ápolástudomány </button><br>
+                    <button onclick="changeWordFile(event)">Ápolási
+                        beavatkozások</button><br>
+                    <button onclick="changeWordFile(event)">Betegmegfigyelés</button><br>
+                </div>
+            </div>
+            <div>
+                <button class="accordion">Klinikumi ismeretek</button>
+                <div class="panel">
+                    <button onclick="changeWordFile(event)">Anatómia – élettan</button><br>
+                    <button onclick="changeWordFile(event)">Mikrobiológiajárványtan, általános
+                        kórtan
+                        </button><br>
+                    <button onclick="changeWordFile(event)">Gyógyszertani
+                        alapismeretek</button><br>
+                    <button onclick="changeWordFile(event)">Belgyógyászat
+                        alapjai</button><br>
+                    <button onclick="changeWordFile(event)">Sebészet alapjai</button><br>
+                    <button onclick="changeWordFile(event)">Gyermekgyógyászat
+                        alapjai</button><br>
+                    <button onclick="changeWordFile(event)">Diagnosztika
+                        alapjai
+                        </button><br>
+                    <button onclick="changeWordFile(event)">Terápiás
+                        alapismeretek</button><br>
+                    <button onclick="changeWordFile(event)">Elsősegélynyújtás,
+                        első ellátás</button><br>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("aktiv");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+    <!-- Ennek alapján készítettem el: https://codepen.io/scanfcode/pen/MEZPNd -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-t-12">
+              <h6>Az oldalról</h6>
+              <p class="text-justify">Ez a weboldal a Corvinus egyetem Webfejlesztés kurzus beadandó vizsgafeladataként készült. Célja az érettségire készülő hallgatók felkészülésének megkönnyebbítése.</p>
+            </div>
+            <div class="col-3 col-t-3">
+              <h6>Hasznos linkek</h6>
+              <ul class="footer-links">
+                <li><a href="https://www.oktatas.hu/" target="_blank">Oktatási hivatal</a></li>
+                <li><a href="https://eduline.hu/" target="_blank">Eduline</a></li>
+                <li><a href="http://szocialis-gondozo.lapunk.hu/?modul=oldal&tartalom=695830" target="_blank">Szociális Gondozó</a></li>
+                <li><a href="http://https://zanza.tv/" target="_blank">Zanza.tv</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RvwAufpwSNQ-qqkSfwDUv4rv3QbrHxld?usp=sharing" target="_blank">Google drive mappa a feladatoknak</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-t-6">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Fekete Gábor</p>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+
+</html>

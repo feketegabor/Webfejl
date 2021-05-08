@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fekete Gábor">
+    <meta name="description" content="Egészségügyi ismeretek érettségi vizsgatárgyat bemutató oldal">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="kepek/favicon/android-icon-192x192.png">
+    <script src="script.js"></script>
+    <title>Egészségügyi ismeretek</title>
+</head>
+<body>  
+    <div class="row">
+        <header class="col-12 col-t-12">
+            <img src="kepek/headerWithTitle.png" alt="">
+        </header>
+    </div>
+    <div class="row">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Kezdő</a>
+                <a href="vl.html">Vizsgaleírás</a>
+                <a href="tananyag.html">Tananyagok</a>
+                <a href="feladatok.html">Feladatok</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <aside></aside>
+    <div class="row">
+        <article class="col-6 col-t-12">
+            <h2>Mit takar az, hogy egészségügyi ismeretek?</h2>
+            <p class="textPanel">Az Egészségügyi ismeretek ágazati szakmai érettségi vizsga az egészségügyi felsőképzésekhez választható
+                érettségi vizsgatágy.</p>
+            <div class="hatterSzinezes">
+                <p>Az egészségügyi ismeretek ágazati szakmai érettségi vizsga részletes érettségi vizsgakövetelményei
+                    az I. Egészségügy ágazat következő szakképesítéseinek közös szakmai tartalmát veszik alapul:</p>
+                <ul>
+                    <li>Fogászati asszisztens</li>
+                    <li>Gyógyszertári asszisztens</li>
+                    <li>Perioperatív asszisztens</li>
+                    <li>Gyakorló mentőápoló</li>
+                    <li>Gyakorló ápoló</li>
+                    <li>Gyakorló csecsemő- és gyermekápoló</li>
+                    <li>Audiológiai asszisztens és hallásakusztikus</li>
+                    <li>Fizioterápiás asszisztens</li>
+                    <li>Gyakorló klinikai laboratóriumi asszisztens</li>
+                    <li>Gyakorló kórszövettani asszisztens</li>
+                    <li>Kardiológiai és angiológiai asszisztens</li>
+                    <li>Klinikai neurofiziológiai asszisztens</li>
+                    <li>Radiográfiai asszisztens</li>
+                    <li>Gyógymasszőr</li>
+                    <li>Ergoterapeuta</li>
+                </ul>
+            </div>
+        </article>    
+        <article class="col-6 col-t-12">
+            <h2>Milyen kompetenciák kellenek hozzá?</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openKomp(event, 'kompetenciaKozep')">Középszint</button>
+                <Button class="tablinks" onclick="openKomp(event, 'kompetenciaEmelt')">Emeltszint</Button>
+
+                <div id="kompetenciaKozep" class="tabcontent">
+                    <span class="closeTabX" onclick="this.parentElement.style.display='none';closeTabs()">x</span>
+                    <table>
+                        <caption>Szakmai nyelv- és szóhasználat, beszédkészség</caption>
+                        <tr>
+                            <td>A szakmai fogalmak helyes használata</td>
+                            <td>Legyen képes a szakmai fogalmakat megfelelő helyen és módon alkalmazni latin nyelven is.</td>
+                        </tr>
+                        <tr>
+                            <td>A szakmai fogalmakkal az ismeretanyag bemutatása, értelmezése</td>
+                            <td>Legyen képes a téma tartalmát logikusan felépíteni, a szakmai kifejezések helyes alkalmazásával.</td>
+                        </tr>
+                        <tr>
+                            <td>Kommunikáció szakmai nyelven</td>
+                            <td>Legyen képes a témát pontosan, szabatosan, lényegre törően kifejteni.</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Rendszerező képesség</caption>
+                        <tr>
+                            <td>Lényegkiemelés</td>
+                            <td>Tudja a lényeges és kevésbé lényeges szempontokat megkülönböztetni. Legyen képes az információkat szétválogatni szakmai szempontok alapján.</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Logikus gondolkodás</caption>
+                        <tr>
+                            <td> Logikai képesség</td>
+                            <td>Legyen képes a meglévő információkat, valamint az elmélet és gyakorlat közötti összefüggéseket felismerni.</td>
+                        </tr>
+                        <tr>
+                            <td>Kombinatív képesség</td>
+                            <td>Tudja a meglévő információk alapján a lehetőségeket számbavenni.</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Szakszerűség</caption>
+                        <tr>
+                            <td>Precizitás </td>
+                            <td>Legyen képes pontosan, szakmai követelmények betartásával munkáját végezni.</td>
+                        </tr>
+                        <tr>
+                            <td>Megbízhatóság, felelősségtudat</td>
+                            <td>Legyen képes a rábízott feladatok a tevékenység következményeinek tudatában történő felelősségteljes, a tőle elvárható, legjobb tudása szerint végezni</td>
+                        </tr>
+                        <tr>
+                            <td>Helyzetfelismerés</td>
+                            <td>Legyen képes a beteg állapotának, helyzetének felismerését követően a szakmai kompetenciának megfelelően cselekedni..</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div id="kompetenciaEmelt" class="tabcontent">
+                    <span class="closeTabX" onclick="this.parentElement.style.display='none';closeTabs()">x</span>
+                    <table>
+                        <caption>Szakmai nyelv- és szóhasználat, beszédkészség</caption>
+                        <tr>
+                            <td> A szakmai fogalmak helyes használata</td>
+                            <td>Legyen képes a szakmai fogalmakat megfelelő helyen és módon alkalmazni latin nyelven is.</td>
+                        </tr>
+                        <tr>
+                            <td>A szakmai fogalmakkal az ismeretanyag bemutatása, értelmezése</td>
+                            <td>Legyen képes kifejteni a téma tartalmát, továbbá logikusan felépíteni, a szakmai kifejezések helyes alkalmazásával.</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Rendszerező képesség</caption>
+                        <tr>
+                            <td>Elvonatkoztatás képessége</td>
+                            <td>Legyen képes az összefüggéseket felismerni, a lényeget kiemelni, általánosítani.</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Logikus gondolkodás</caption>
+                        <tr>
+                            <td>Konvertáló képesség</td>
+                            <td>Legyen képes a meglévő tudás átalakításával új ismereteit alkalmazni.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </div>
+    
+    <section>
+    </section>
+    <!-- Ennek alapján készítettem el: https://codepen.io/scanfcode/pen/MEZPNd -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-t-12">
+              <h6>Az oldalról</h6>
+              <p class="text-justify">Ez a weboldal a Corvinus egyetem Webfejlesztés kurzus beadandó vizsgafeladataként készült. Célja az érettségire készülő hallgatók felkészülésének megkönnyebbítése.</p>
+            </div>
+            <div class="col-3 col-t-3">
+              <h6>Hasznos linkek</h6>
+              <ul class="footer-links">
+                <li><a href="https://www.oktatas.hu/" target="_blank">Oktatási hivatal</a></li>
+                <li><a href="https://eduline.hu/" target="_blank">Eduline</a></li>
+                <li><a href="http://szocialis-gondozo.lapunk.hu/?modul=oldal&tartalom=695830" target="_blank">Szociális Gondozó</a></li>
+                <li><a href="http://https://zanza.tv/" target="_blank">Zanza.tv</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RvwAufpwSNQ-qqkSfwDUv4rv3QbrHxld?usp=sharing" target="_blank">Google drive mappa a feladatoknak</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-t-6">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Fekete Gábor
+              </p>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+
+</html>

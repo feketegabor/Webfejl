@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fekete Gábor">
+    <meta name="description" content="Egészségügyi ismeretek érettségi vizsgatárgyat bemutató oldal">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="kepek/favicon/android-icon-192x192.png">
+    <script src="script.js"></script>
+    <title>Egészségügyi ismeretek</title>
+</head>
+<body>  
+    <div class="row">
+        <header class="col-12 col-t-12">
+            <img src="kepek/headerWithTitle.png" alt="">
+        </header>
+    </div>
+    <div class="row">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Kezdő</a>
+                <a href="vl.html"  class="active">Vizsgaleírás</a>
+                <a href="tananyag.html">Tananyagok</a>
+                <a href="feladatok.html">Feladatok</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <article  id="irasbeliVizsga" class="col-6 col-t-12">
+            <h2>Írásbeli vizsga</h2>
+            <p class="textPanel">A központilag összeállított írásbeli vizsga célja, hogy ellenőrizhető képet adjon a vizsgázó tudásáról
+                ismeretek és képességek és az alkalmazás tekintetében egyaránt.</p>
+            <div class="hatterSzinezes">
+                <p class="text-justify"><b><em>Tartalmi szerkezet:</em></b>
+                    Az érettségi vizsgán az írásbeli összpontszám fele-fele arányban a tesztjellegű feladatok és a rövid
+                    válaszokat igénylő feladatok megoldásával érhető el. A központi írásbeli ismeretanyagának összeállítása
+                    az egyes témakörökhöz tartozó részletes követelményeken alapul. A 10-15 feladatból álló tesztjellegű
+                    feladatokban és a 10-15 feladatból álló, rövid választ igénylő feladatokban a témakörök aránya:
+                    </p>
+                <h3>Témakörök:</h3>
+                <ol>
+                    <li>Alapápolás - Egészségügyi alapismeretek (50%): <br>
+                        <ul>
+                            <li>egészséges ember gondozása</li>
+                            <li>akadályozott ember gondozása</li>
+                            <li>csecsemő- és kisgyermekgondozás</li>
+                            <li>betegmegfigyelés</li>
+                            <li>ápolási beavatkozások</li>
+                            <li>egészségfejlesztés</li>
+                            <li>ápolástudomány</li>
+                            <li>egészségügyi ellátórendszer</li>
+                            <li> népegészségügy - környezet-egészségügy</li>
+                        </ul>
+                    </li>
+                    <li>Klinikumi ismeretek (50%): <br>
+                        <ul>
+                            <li>anatómia-élettan</li>
+                            <li>mikrobiológia-járványtan, általános kórtan</li>
+                            <li>gyógyszertani alapismeretek</li>
+                            <li>elsősegélynyújtás, első-ellátás</li>
+                            <li>belgyógyászat alapjai</li>
+                            <li>sebészet alapjai</li>
+                            <li>gyermekgyógyászat alapjai</li>
+                            <li>diagnosztika alapjai</li>
+                            <li>terápiás alapismeretek</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </article>
+        <article class="col-6 col-t-12">
+            <h2>A Vizsga leírása:</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openKomp(event, 'kompetenciaKozep');">Középszint</button>
+                <button class="tablinks" onclick="openKomp(event, 'kompetenciaEmelt');">Emeltszint</button>
+
+                <div id="kompetenciaKozep" class="tabcontent">
+                    <span class="closeTabX" onclick="this.parentElement.style.display='none';closeTabs()">x</span>
+                    <table>
+                        <caption>A vizsga részei</caption>
+                        <tr>
+                            <td>Írásbeli vizsga</td>
+                            <td>Szóbeli vizsga</td>
+                        </tr>
+                        <tr>
+                            <td>180 perc</td>
+                            <td>15 perc</td>
+                        </tr>
+                        <tr>
+                            <td>100 pont</td>
+                            <td>50 pont</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>A vizsgán használható segédeszközök</caption>
+                        <tr>
+                            <td>A vizsgázó biztosítja</td>
+                            <td>Nincs</td>
+                        </tr>
+                        <tr>
+                            <td>A vizsgabizottságot működtető intézmény biztosítja</td>
+                            <td>Vérnyomásmérő, lázlap, ápolási dokumentáció, ambu fantom, fonendoszkóp</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Középszintű vizsga</caption>
+                        <tr>
+                            <td colspan="2">Írásbeli vizsga </td>
+                            <td colspan="2">Szóbeli vizsga</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">180 perc</td>
+                            <td colspan="2">15 perc</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Feladatlap</td>
+                            <td rowspan="3">Egy „A” és „B” feladatot tartalmazó tétel kifejtése</td>
+                        </tr>
+                        <tr>
+                            <td>Teszt-jellegű feladatok</td>
+                            <td>Rövid válaszokat igénylő feladatok</td>
+                        </tr>
+                        <tr>
+                            <td>50 pont</td>
+                            <td>50 pont</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">100 pont</td>
+                            <td colspan="2">50 pont</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="kompetenciaEmelt" class="tabcontent">
+                    <span class="closeTabX" onclick="this.parentElement.style.display='none';closeTabs()">x</span>
+                    <table>
+                        <caption>A vizsga részei</caption>
+                        <tr>
+                            <td>Írásbeli vizsga</td>
+                            <td>Szóbeli vizsga</td>
+                        </tr>
+                        <tr>
+                            <td>180 perc</td>
+                            <td>15 perc</td>
+                        </tr>
+                        <tr>
+                            <td>100 pont</td>
+                            <td>50 pont</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>A vizsgán használható segédeszközök</caption>
+                        <tr>
+                            <td>A vizsgázó biztosítja</td>
+                            <td>Nincs</td>
+                        </tr>
+                        <tr>
+                            <td>A vizsgabizottságot működtető intézmény biztosítja</td>
+                            <td>Vérnyomásmérő, lázlap, ápolási dokumentáció, ambu fantom, fonendoszkóp</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Emelt szintű vizsga</caption>
+                        <tr>
+                            <td colspan="2">Írásbeli vizsga </td>
+                            <td colspan="2">Szóbeli vizsga</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">180 perc</td>
+                            <td colspan="2">20 perc</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Feladatlap</td>
+                            <td rowspan="3">Egy „A” és „B” feladatot tartalmazó tétel kifejtése</td>
+                        </tr>
+                        <tr>
+                            <td>Teszt-jellegű feladatok</td>
+                            <td>Rövid válaszokat igénylő feladatok</td>
+                        </tr>
+                        <tr>
+                            <td>50 pont</td>
+                            <td>50 pont</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">100 pont</td>
+                            <td colspan="2">50 pont</td>
+                        </tr>
+                    </table>
+                </div>        
+            </div>
+            <div id="vizsgaLeirasAlatt">
+                <h3>Feladattípusok</h3>
+                <ul class="whitePanel nomarker">
+                    <li>Feleletválasztó feladatok: <br>
+                        <ol>
+                            <li>egyszerű választás („Húzza alá!”)</li>
+                            <li>többszörös választás</li>
+                            <li>illesztés (párosítás, csoportosítás)</li>
+                            <li>sorrend meghatározása</li>
+                            <li>ok-okozati összefüggés keresése</li>
+                            <li>igaz-hamis választás</li>
+                        </ol>
+                    </li>
+                    <li>Feleletalkotó feladatok: <br>
+                        <ol>
+                            <li>rövid válasz (meghatározás)</li>
+                            <li>ábrafelismerés, ábraelemzés</li>
+                            <li>több jellemző felsorolása/megnevezése</li>
+                            <li>adatok kiegészítése (szöveg, táblázat kiegészítés)</li>
+                            <li>fogalmak meghatározása, magyarázata, hozzárendelése állításokhoz</li>
+                            <li>folyamatszakaszok sorrendjének megállapítása</li>
+                            <li>ok-okozati összefüggések felismerése</li>
+                            <li>tényadatok rendezése megadott szempontok szerint</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div id="ertekeles">
+                <h3>Értékelés</h3>
+                <p class="text-justify whitePanel">
+                    Az értékelés a központilag összeállított javítási-értékelési útmutató kötelező előírásai alapján
+                    történik. Az egyes kérdésekre és feladatokra adható pontszámokat a javítási-értékelési útmutató
+                    tartalmazza. A javítás során az útmutatóban meghatározott pontszám tovább nem bontható.
+                </p>
+            </div>  
+        </article>    
+    </div>
+    <div class="row">
+        <hr class="rounded">
+        <article class="col-6 col-t-12">
+            <h2>Szóbeli vizsga</h2>
+            <p class="textPanel">A tételek összeállításánál törekedni kell a változatos, problémamegoldást ösztönző, egyértelmű
+                megfogalmazásokra.</p>
+            <div class="hatterSzinezes">
+                <p class="text-justify">
+                    A szóbeli tételsor 20-25 tételből áll, évente cserélni kell a tételek 20-25%-át. A szóbeli vizsgán a vizsgázó a kihúzott tétel „A” és „B” feladataira válaszol. Az „A” feladat elméleti ismeretek, a „B” feladat az ápolási, gondozási, diagnosztikus és terápiás eszközök és használatuk ismeretét, valamint az elsősegélynyújtás eszközeinek és teendőinek ismeretét méri fel.
+                </p>
+                <h3>Témakörök:</h3>
+                <ol>
+                    <li>„A” feladat:<br>
+                        <ul>
+                            <li>egészséges ember gondozása</li>
+                            <li>betegmegfigyelés</li>
+                            <li>ápolási beavatkozások</li>
+                            <li>gyógyszertani alapismeretek, gyógyszerelés</li>
+                            <li>anatómia-élettan</li>
+                            <li>mikrobiológia- járványtan, általános kórtan</li>
+                            <li>belgyógyászat alapjai</li>
+                            <li>sebészet alapjai</li>
+                            <li>gyermekgyógyászat alapjai</li>
+                            <li>szakmai etikai és jogi ismeretek</li>
+                            <li>kommunikáció</li>
+                        </ul>
+                    </li>
+                    <li>„B” feladat:<br>
+                        <ul>
+                            <li>egészséges ember gondozása</li>
+                            <li>fogyatékos személy gondozása</li>
+                            <li>csecsemő- és kisgyermekgondozás</li>
+                            <li>diagnosztikai alapismeretek</li>
+                            <li>terápiás alapismeretek</li>
+                            <li>gyógyszertani alapismeretek, gyógyszerelés</li>
+                            <li>diagnosztika alapjai</li>
+                            <li>terápiás alapismeretek</li>
+                            <li>elsősegélynyújtás-első ellátás</li>
+                            <li>ápolási beavatkozások</li>
+                            <li>betegmegfigyelés</li>
+                            <li>pszichológia és pedagógia alapjai</li>
+                            <li>szociológia</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </article>
+        <article class= "col-6 col-t-12 lecsusztatni">
+            <h3>Értékelés</h3>
+            <p class="text-justify whitePanel">
+                A központi értékelési útmutató rögzíti az egyes feladatok kifejtésének elvárt tartalmi összetevőit és az ezekre adható, feladatonként 25 pont felosztásával kialakított maximális részpontszámokat, amely alapján a feleletet értékelni kell. Az egyes részpontszámok legfeljebb 5-6 pontot érnek.
+            </p>
+            <h3>Értékelelési útmutató</h3>
+            <table class="ertekelesiUtmutato">
+                <tr>
+                    <td rowspan="2">Szempontok, kompetenciák</td>
+                    <td colspan="3">Pontszám</td>
+                </tr>
+                <tr>
+                    <td>„A” feladat</td>
+                    <td>„B” feladat</td>
+                    <td>Összesen</td>
+                </tr>
+                <tr>
+                    <td>Feladat megértése, a lényeg kiemelése, világosság, szabatosság, a felelet felépítése</td>
+                    <td>2 pont</td>
+                    <td>2 pont</td>
+                    <td>4 pont</td>
+                </tr>
+                <tr>
+                    <td>Tartalmi összetevők: alapfogalmak ismerete, definiálása, összefüggések problémaközpontú bemutatása</td>
+                    <td>20 pont</td>
+                    <td>20 pont</td>
+                    <td>44 pont</td>
+                </tr>
+                <tr>
+                    <td>Szakkifejezések használata</td>
+                    <td>3 pont</td>
+                    <td>3 pont</td>
+                    <td>6 pont</td>
+                </tr>
+                <tr>
+                    <td>SZÓBELI ÖSSZPONTSZÁM:</td>
+                    <td>25 pont</td>
+                    <td>25 pont</td>
+                    <td>50 pont</td>
+                </tr>
+            </table>
+        </article>
+    </div>
+    <!-- Ennek alapján készítettem el: https://codepen.io/scanfcode/pen/MEZPNd -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-t-12">
+              <h6>Az oldalról</h6>
+              <p class="text-justify">Ez a weboldal a Corvinus egyetem Webfejlesztés kurzus beadandó vizsgafeladataként készült. Célja az érettségire készülő hallgatók felkészülésének megkönnyebbítése.</p>
+            </div>
+            <div class="col-3 col-t-3">
+              <h6>Hasznos linkek</h6>
+              <ul class="footer-links">
+                <li><a href="https://www.oktatas.hu/" target="_blank">Oktatási hivatal</a></li>
+                <li><a href="https://eduline.hu/" target="_blank">Eduline</a></li>
+                <li><a href="http://szocialis-gondozo.lapunk.hu/?modul=oldal&tartalom=695830" target="_blank">Szociális Gondozó</a></li>
+                <li><a href="http://https://zanza.tv/" target="_blank">Zanza.tv</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RvwAufpwSNQ-qqkSfwDUv4rv3QbrHxld?usp=sharing" target="_blank">Google drive mappa a feladatoknak</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-t-6">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Fekete Gábor
+              </p>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+
+</html>
