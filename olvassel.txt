@@ -1,0 +1,28 @@
+
+A projekt weblapom az egészségügyi ismeretek vizsgatárgyról elérhetõ információkat foglalja össze 1 helyen, így megkönnyítve az érettségizõk dolgát.
+
+Az elsõ oldalon (Kezdõ) általános információk találhatóak a tárggyal kapcsolatban közép- és emeltszinten. Az "emelt" és "közép" gombot megnyomva kinyílik egy tab, ahol fontos információkat olvashat.
+
+A második oldalon (Vizsgaleírás) a vizsgával kapcsolatban találhatóak információk két nagy csoportra bontva: írásbeli, szóbeli. Az írásbeli vizsgánál kiválasztható, hogy emelt, vagy középszinten vagyunk kiváncsi az információkra, és megnyomva a gombot megtekinthetük azokat.
+Megjegyzés: Javascripttel és media-queryvel oldottam meg, hogy az írásbeli vizsgánál lévõ értékelés az egyik divbõl a másikba kerüljön a szebb design érdekében
+
+A harmadik oldalon (Tananyagok) 3 gombon keresztül lehet lenyitni a különbözõ témákat, amik szerepelnek a vizsgakövetelményben. A témákra kattintva megjelenik egy link és egy, a témakörhöz tartozó érettségiben elõfordult feladat pdf formátumban iframbe ágyazva. A lekérdezés webapin (saját készítésû)  keresztül történik, javascriptben a fetch segítségébel. Az adatok sql szerveren vannak, ami az Azuron fut.
+Megjegyzés: Mivel nagyon lassan jelennek csak meg a feladatok, és így is sokszor bugos, ezért csak 1 feladatot jelenítek meg inkább, az elsõt az adatbázisból. (ha van egyáltalán feladat a témakörhöz kapcsolódóan) Minden feladatot én szerkesztettem ki az érettségi feladatsorból, és megtalálhatóak a lap alján lévõ google drive linkre kattintva.
+
+A negyedik oldalon (Feladatok) egy Jquery segítségével létrehozott galéria látható a 2019 májusi érettségi vizsgafeladatokkal feltöltve.
+
+Az ötödik oldalon (Kapcsolatok) egy visszaszámláló található, ami folyamatosan méri, hogy még mennyi idõ van az érettségi idõpontjáig. Alatt látható egy form, amit Jquery validál, és az órán használt php-re posztol.
+
+A header képét és a favicont én szerkesztettem.
+
+A javascript feladatként a fetchelést, a visszaszámlálót és az egyéb javascript kódjaimat szeretném, ha együtt pontoznák.
+
+Az oldal teljes mértékben responsív.
+
+A kód megírása során használt forrásaim: 
+	Template a footerhez: https://codepen.io/scanfcode/pen/MEZPNd
+	Template/leírás a navbarhoz: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+	Template/leírás a tabokhoz: https://www.w3schools.com/howto/howto_js_tabs.asp
+	Template/leírás az összecsukható tartalmakhoz (accordion): https://www.w3schools.com/howto/howto_js_accordion.asp
+	Mindenhez, amit nem tudtam :) : stackoverflow
+Megyjegyzés: Minden kódot valamennyire átszerkesztettem, olyan nincs ami tökéletesen ugyanaz maradt volna	
